@@ -1,0 +1,19 @@
+{
+  "name": "katona_work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy":"cp -R src/img/ dist/ && cp -R src/index.html dist/ && cp -R src/style.css dist/ && cp -R src/app.js dist/ && cp -R src/fetchContent.js dist/ && cp -R src/credentials.js dist/",
+    "bundle":"rollup -c",
+    "build": "npm run bundle && npm run copy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^2.10.2",
+    "rollup-plugin-terser": "^5.3.0"
+  }
+}
