@@ -11,9 +11,10 @@ class Overlay extends HTMLElement {
 	getURLs() {
 		window.showcaseData.documents.forEach((doc) => {
 			let data = []
+			if(doc.fields.images.arrayValue.values){
 			doc.fields.images.arrayValue.values.forEach((val) => {
 				data.push(val.stringValue)
-			})
+			})}
 			this.urls[doc.fields.id.stringValue] = data
 		})
 	}

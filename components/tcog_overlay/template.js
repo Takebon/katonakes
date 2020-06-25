@@ -102,8 +102,11 @@ flex-direction: column;
 align-items: center;
 width: 100%;
 height: calc(100vh - 3rem);
-margin-bottom: .5rem;                       
-}             
+margin-bottom: .5rem;     
+}
+canvas {
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.5);              
+}
 </style>
 `
   }
