@@ -93,9 +93,9 @@ export default class Slider {
 		if (!this.imagesLoaded) return
 		this.setStart()
 		const images = this.images[subFolder]
-		if(!images.length) return
-    this.length = images.length
-		if(images.length === 1){
+		if (!images.length) return
+		this.length = images.length
+		if (images.length === 1) {
 			this.length = 1
 			images[1] = images[0]
 		}
@@ -139,7 +139,7 @@ export default class Slider {
 		this.gl.bindTexture(this.gl.TEXTURE_2D, this.textures[(this.current + 1) % length])
 		this.gl.uniform1i(this.u_image1Location, 1)
 		this.isRunning = false
-		this.dom.count.innerText = `${this.current + 1} / ${this.length}`		
+		this.dom.count.innerText = `${this.current + 1} / ${this.length}`
 	}
 
 	loop() {
