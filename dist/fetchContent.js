@@ -12,8 +12,8 @@ const fetchData = async () => {
   if(!window.showcaseData){
 		const resp = await fetch(url)
     window.showcaseData = await resp.json()
-    runCode("../components/tcog_showcase/tcog-showcase.js")
-    runCode("../components/tcog_overlay/tcog-overlay.js")
+    runCode("./tcog-showcase.js")
+    runCode("./tcog-overlay.js")
     runCode("./app.js", "body")
 	}	
 }
